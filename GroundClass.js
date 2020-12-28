@@ -6,7 +6,7 @@ class Ground {
         }
         this.body = MyBodies.rectangle(x,y,width,height,options);
         MyWorld.add(world,this.body);
-        this.color=color(random(0,255),random(0,255) , random(0,255));
+        // this.color=color(random(0,255),random(0,255) , random(0,255));
         this.width=width;
         this.height=height;
         
@@ -20,7 +20,7 @@ class Ground {
         push();
         translate(pos.x,pos.y);
         rotate(angle);
-        //this.color=color(random(0,255),random(0,255) , random(0,255));
+        this.color=color(random(0,255),random(0,255) , random(0,255));
         fill(this.color);
         rect(0,0,this.width,this.height);
         pop();
