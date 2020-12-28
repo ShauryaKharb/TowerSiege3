@@ -76,7 +76,7 @@ function draw(){
     noStroke();
     textSize(35)
     fill(random(0,255),random(0,255) , random(0,255));
-    fill("black");
+    // fill("black");
     text("Score : " + score, width - 300, 50)
 
     keyPressed();
@@ -155,11 +155,11 @@ async function getBackgroundImg(){
     var datetime = responseJSON.datetime;
     var hour = datetime.slice(11,13);
 
-    console.log(hour);
+    // console.log(hour);
 
     if(hour>=06 && hour<=19){
-        background("red");
-        // console.log("Working");
+        // background("red");
+        console.log("Working");
     }
     else{
        
