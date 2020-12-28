@@ -5,8 +5,8 @@ class ObjectClass{
         }
         this.body = MyBodies.rectangle(x,y,width,height,options);
         MyWorld.add(world,this.body);
-        this.color=color(random(0,255),random(0,255) , random(0,255));
-        this.color1=color(random(0,255),random(0,255) , random(0,255));
+        // this.color=color(random(0,255),random(0,255) , random(0,255));
+        // this.color1=color(random(0,255),random(0,255) , random(0,255));
         this.width=width;
         this.height=height;
         this.Visibility=255;
@@ -29,10 +29,10 @@ class ObjectClass{
             push();
             translate(pos.x,pos.y);
             rotate(angle);
-            // this.color=color(random(0,255),random(0,255) , random(0,255));
-            // this.color1=color(random(0,255),random(0,255) , random(0,255));
+            this.color=color(random(0,255),random(0,255) , random(0,255));
+            this.color1=color(random(0,255),random(0,255) , random(0,255));
             fill(this.color);
-            stroke("black");
+            stroke(this.color1);
             strokeWeight(3);
             //image(this.image,0,0,50,50);
             rect(0,0,this.width,this.height);
