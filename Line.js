@@ -8,7 +8,7 @@ class Line{
         }
         this.string=Constraint.create(options);
         MyWorld.add(world,this.string);
-        this.color=color(random(0,255),random(0,255) , random(0,255));
+        // this.color=color(random(0,255),random(0,255) , random(0,255));
     }
 
     attach(body){
@@ -26,7 +26,7 @@ class Line{
             
             push();
 
-            //this.color=color(random(0,255),random(0,255) , random(0,255));
+            this.color=color(random(0,255),random(0,255) , random(0,255));
 
             stroke(this.color);
 
