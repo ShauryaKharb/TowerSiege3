@@ -69,13 +69,13 @@ function setup(){
 }
 
 function draw(){
-    //background(random(0,255),random(0,255) , random(0,255));
-    background(100);
+    background(random(0,255),random(0,255) , random(0,255));
+    // background(100);
     MyEngine.update(engine);
 
     noStroke();
     textSize(35)
-    //fill(random(0,255),random(0,255) , random(0,255));
+    fill(random(0,255),random(0,255) , random(0,255));
     fill("black");
     text("Score : " + score, width - 300, 50)
 
